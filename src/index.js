@@ -2,7 +2,7 @@ const { v4: uuidv4 } = require('uuid')
 require('dotenv').config()
 const cors = require('cors');
 const express = require('express');
-const models = require ('../models/index');
+const models = require ('./models/index');
 
 const app = express();
 
