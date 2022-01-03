@@ -1,0 +1,31 @@
+{
+  "name": "rest-api-tut",
+  "version": "1.0.0",
+  "description": "A tutorial repo on creating a REST API using Node/Express",
+  "main": "index.js",
+  "scripts": {
+    "start":"nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisnotthere/rest-api-tut.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrisnotthere/rest-api-tut/issues"
+  },
+  "homepage": "https://github.com/chrisnotthere/rest-api-tut#readme",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
