@@ -14,7 +14,7 @@ router.post('/', (req, res) => {
   const id = uuidv4();
   const message = {
     id,
-    text: req.body.text,
+    text: req.body.text,    // app.use(express.json()) allows us to do this
     userId: req.context.me.id,
   };
 
@@ -29,6 +29,7 @@ router.delete('/:messageId', (req, res) => {
     ...otherMessages
   } = req.context.models.messages;
 
+  // exclude the message we want to delete from messages object
   req.context.models.messages = otherMessages;
 
   return res.send(message);
